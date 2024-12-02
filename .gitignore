@@ -73,3 +73,6 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 GnomeCunning/Saved/Telemetry/Telemetry.json
+
+GnomeCunning/Content/MegaMagicVFXBundle/*/**
+GnomeCunning/Content/YI_NPC/*/**
