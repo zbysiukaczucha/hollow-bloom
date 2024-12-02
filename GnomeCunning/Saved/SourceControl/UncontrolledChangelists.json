@@ -9,14 +9,20 @@
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/Leaning/Lean_Rigt.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/Leaning/LeaningBlendSpace1D.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/ABP_MainCharacter.uasset",
-				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/BPC_PlayerStats.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/UI/WB_HUD.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/ThirdPerson/Input/IMC_Default.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/ThirdPerson/Input/Actions/IA_Sprint.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/ThirdPerson/Input/Actions/IA_Roll.uasset",
-				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/Locomotion/LocomotionBlendSpace1D.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/Crouching/CrouchingBlendSpace1D.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/Y8/7WU8RP4A6MHRLXT1NIP2RU.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/Mannequins/Rigs/CR_Mannequin_BasicFootIK.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/BPC_AttackComponent.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/BP_Fireball.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/BPC_PlayerStats.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/BPC_CombatComponent.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Blueprints/E_MovementDirection.uasset",
+				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/Characters/MainCharacter/Animations/Locomotion/LocomotionBlendSpace1D.uasset",
 				"C:/Users/Zbysiu/source/repos/gnome-cunning/GnomeCunning/Content/ThirdPerson/Input/Actions/IA_Crouch.uasset"
 			]
 		}

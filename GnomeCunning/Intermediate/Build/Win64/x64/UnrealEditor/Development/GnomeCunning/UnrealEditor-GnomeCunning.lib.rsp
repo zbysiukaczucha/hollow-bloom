@@ -7,11 +7,15 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\GnomeCunningEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\CombatComponent.gen.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunning.init.gen.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunningCharacter.gen.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunningGameMode.gen.cpp.obj"
+"C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\PlayerStats.gen.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunning.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunningCharacter.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\GnomeCunningGameMode.cpp.obj"
+"C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\CombatComponent.cpp.obj"
+"C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\PlayerStats.cpp.obj"
 "C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\Default.rc2.res"
 /OUT:"C:\Users\Zbysiu\source\repos\gnome-cunning\GnomeCunning\Intermediate\Build\Win64\x64\UnrealEditor\Development\GnomeCunning\UnrealEditor-GnomeCunning.lib"
