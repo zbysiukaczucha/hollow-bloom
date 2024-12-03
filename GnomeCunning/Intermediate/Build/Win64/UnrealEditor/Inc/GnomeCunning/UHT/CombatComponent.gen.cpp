@@ -165,7 +165,7 @@ struct Z_Construct_UClass_UCombatComponent_Statics
 		{ "ToolTip", "Is the character currently attacking?" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SwordDamage_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsCasting_MetaData[] = {
 		{ "Category", "Combat" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the character performing a combo attack?\n" },
@@ -173,6 +173,16 @@ struct Z_Construct_UClass_UCombatComponent_Statics
 		{ "ModuleRelativePath", "Public/CombatComponent.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the character performing a combo attack?" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SwordDamage_MetaData[] = {
+		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Is the character currently casting a spell?\n" },
+#endif
+		{ "ModuleRelativePath", "Public/CombatComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Is the character currently casting a spell?" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsDodging_MetaData[] = {
@@ -214,6 +224,8 @@ struct Z_Construct_UClass_UCombatComponent_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsAttacking;
 	static void NewProp_bIsComboAttacking_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsComboAttacking;
+	static void NewProp_bIsCasting_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsCasting;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_SwordDamage;
 	static void NewProp_bIsDodging_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsDodging;
@@ -230,7 +242,7 @@ struct Z_Construct_UClass_UCombatComponent_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_TargetLockActor = { "TargetLockActor", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, TargetLockActor), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetLockActor_MetaData), NewProp_TargetLockActor_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_PlayerBP = { "PlayerBP", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, PlayerBP), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerBP_MetaData), NewProp_PlayerBP_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_TargetLockWidgetClass = { "TargetLockWidgetClass", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, TargetLockWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetLockWidgetClass_MetaData), NewProp_TargetLockWidgetClass_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_TargetLockWidget = { "TargetLockWidget", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, TargetLockWidget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetLockWidget_MetaData), NewProp_TargetLockWidget_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_TargetLockWidget = { "TargetLockWidget", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, TargetLockWidget), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetLockWidget_MetaData), NewProp_TargetLockWidget_MetaData) };
 void Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsAttacking_SetBit(void* Obj)
 {
 	((UCombatComponent*)Obj)->bIsAttacking = 1;
@@ -241,6 +253,11 @@ void Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsComboAttacking_SetB
 	((UCombatComponent*)Obj)->bIsComboAttacking = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsComboAttacking = { "bIsComboAttacking", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UCombatComponent), &Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsComboAttacking_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsComboAttacking_MetaData), NewProp_bIsComboAttacking_MetaData) };
+void Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsCasting_SetBit(void* Obj)
+{
+	((UCombatComponent*)Obj)->bIsCasting = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsCasting = { "bIsCasting", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UCombatComponent), &Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsCasting_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsCasting_MetaData), NewProp_bIsCasting_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCombatComponent_Statics::NewProp_SwordDamage = { "SwordDamage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCombatComponent, SwordDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SwordDamage_MetaData), NewProp_SwordDamage_MetaData) };
 void Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsDodging_SetBit(void* Obj)
 {
@@ -257,6 +274,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCombatCo
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_TargetLockWidget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsAttacking,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsComboAttacking,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsCasting,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_SwordDamage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_bIsDodging,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCombatComponent_Statics::NewProp_MovementDirection_Underlying,
@@ -307,10 +325,10 @@ struct Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatC
 		{ EMovementDirection_StaticEnum, TEXT("EMovementDirection"), &Z_Registration_Info_UEnum_EMovementDirection, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1376111517U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCombatComponent, UCombatComponent::StaticClass, TEXT("UCombatComponent"), &Z_Registration_Info_UClass_UCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatComponent), 1413097162U) },
+		{ Z_Construct_UClass_UCombatComponent, UCombatComponent::StaticClass, TEXT("UCombatComponent"), &Z_Registration_Info_UClass_UCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatComponent), 4022900072U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_633079334(TEXT("/Script/GnomeCunning"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_949915203(TEXT("/Script/GnomeCunning"),
 	Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_CombatComponent_h_Statics::EnumInfo));

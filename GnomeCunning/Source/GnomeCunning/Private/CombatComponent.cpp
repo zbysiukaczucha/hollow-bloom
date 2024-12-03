@@ -14,20 +14,21 @@ UCombatComponent::UCombatComponent()
 	: TargetLockActor(nullptr),
 	  PlayerBP(nullptr),
 	  bIsAttacking(false),
-	  bIsComboAttacking(false),
+	  bIsComboAttacking(false), bIsCasting(false),
 	  SwordDamage(10),
 	  bIsDodging(false),
 	  MovementDirection(),
 	  TargetLockWidgetClass(nullptr),
 	  TargetLockWidget(nullptr),
-	  TargetLock(nullptr)      
+	  TargetLock(nullptr)
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.
 	// You can turn these features off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// Load the Target Lock Widget class
-	static ConstructorHelpers::FClassFinder<AActor> TargetLockWidgetFinder(TEXT("/Game/Blueprints/BP_TargetLockWidget"));
+	static ConstructorHelpers::FClassFinder<AActor>
+		TargetLockWidgetFinder(TEXT("/Game/Blueprints/BP_TargetLockWidget"));
 	if (TargetLockWidgetFinder.Succeeded())
 	{
 		TargetLockWidgetClass = TargetLockWidgetFinder.Class;

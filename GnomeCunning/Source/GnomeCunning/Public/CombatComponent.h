@@ -35,7 +35,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "UI")
 	TSubclassOf<AActor> TargetLockWidgetClass; // Reference to the Target Lock Widget Class
 
-	UPROPERTY(EditDefaultsOnly, Category = "UI")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	AActor* TargetLockWidget; // Reference to the Target Lock Widget Actor
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
@@ -43,6 +43,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	bool bIsComboAttacking; // Is the character performing a combo attack?
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	bool bIsCasting; // Is the character currently casting a spell?
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	float SwordDamage; // Damage dealt by the sword

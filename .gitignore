@@ -74,5 +74,7 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 GnomeCunning/Saved/Telemetry/Telemetry.json
 
-GnomeCunning/Content/MegaMagicVFXBundle/*/**
-GnomeCunning/Content/YI_NPC/*/**
+GnomeCunning/Content/MegaMagicVFXBundle/**
+GnomeCunning/Content/YI_NPC/**
+GnomeCunning/Content/RPG_Orchestral_Essentials_Free_Sample/**
+GnomeCunning/Content/SmallSoundKit/**
