@@ -302,6 +302,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\GnomeCunning\Public\CombatComponent.h"/>
+    <ClInclude Include="..\..\Source\GnomeCunning\Public\Interactable.h" />
     <ClInclude Include="..\..\Source\GnomeCunning\Public\Quest.h"/>
     <ClInclude Include="..\..\Source\GnomeCunning\Public\StatsComponent.h"/>
   </ItemGroup>

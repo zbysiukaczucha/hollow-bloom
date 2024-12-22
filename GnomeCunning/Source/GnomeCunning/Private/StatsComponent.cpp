@@ -4,7 +4,7 @@
 
 // Sets default values for this component's properties
 UStatsComponent::UStatsComponent(): CurrentHealth(100), MaxHealth(100), CurrentStamina(100), MaxStamina(100), CurrentXP(0), MaxXP(1000),
-                              Level(1),
+                              Level(0),
                               Vigor(0),
                               Endurance(0), Fitness(0),
                               Mind(0),
@@ -79,5 +79,7 @@ void UStatsComponent::LevelUp(int32 newVigor, int32 newEndurance, int32 newFitne
 	CurrentXP = CurrentXP - MaxXP;
 	MaxXP = MaxXP + 250;
 	MaxHealth = Vigor * 20 + 100;
+	CurrentHealth = MaxHealth;
 	MaxStamina = Endurance * 20 + 100;
+	CurrentStamina = MaxStamina;
 }
