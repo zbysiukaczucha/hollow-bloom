@@ -60,7 +60,10 @@
     <ClCompile Include="..\..\Source\GnomeCunning\Private\CombatComponent.cpp">
       <Filter>Source\GnomeCunning\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\GnomeCunning\Private\PlayerStats.cpp">
+    <ClCompile Include="..\..\Source\GnomeCunning\Private\Quest.cpp">
+      <Filter>Source\GnomeCunning\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GnomeCunning\Private\StatsComponent.cpp">
       <Filter>Source\GnomeCunning\Private</Filter>
     </ClCompile>
     <Filter Include="Source\GnomeCunning\Public">
@@ -69,7 +72,10 @@
     <ClInclude Include="..\..\Source\GnomeCunning\Public\CombatComponent.h">
       <Filter>Source\GnomeCunning\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\GnomeCunning\Public\PlayerStats.h">
+    <ClInclude Include="..\..\Source\GnomeCunning\Public\Quest.h">
+      <Filter>Source\GnomeCunning\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GnomeCunning\Public\StatsComponent.h">
       <Filter>Source\GnomeCunning\Public</Filter>
     </ClInclude>
   </ItemGroup>

@@ -14,7 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GNOMECUNNING_StatsComponent_generated_h
 
-#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_7_DELEGATE \
+GNOMECUNNING_API void FOnLevelUp_DelegateWrapper(const FMulticastScriptDelegate& OnLevelUp);
+
+
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execLevelUp); \
 	DECLARE_FUNCTION(execIncreaseXP); \
 	DECLARE_FUNCTION(execIncreaseStamina); \
@@ -23,7 +27,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execDecreaseHealth);
 
 
-#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_INCLASS_NO_PURE_DECLS \
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUStatsComponent(); \
 	friend struct Z_Construct_UClass_UStatsComponent_Statics; \
@@ -32,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(UStatsComponent)
 
 
-#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_ENHANCED_CONSTRUCTORS \
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UStatsComponent(UStatsComponent&&); \
@@ -44,13 +48,13 @@ public: \
 	NO_API virtual ~UStatsComponent();
 
 
-#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_7_PROLOG
-#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_GENERATED_BODY \
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_9_PROLOG
+#define FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_INCLASS_NO_PURE_DECLS \
-	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_10_ENHANCED_CONSTRUCTORS \
+	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_INCLASS_NO_PURE_DECLS \
+	FID_GnomeCunning_Source_GnomeCunning_Public_StatsComponent_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

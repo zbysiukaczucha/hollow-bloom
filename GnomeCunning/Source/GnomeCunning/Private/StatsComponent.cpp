@@ -65,7 +65,7 @@ void UStatsComponent::IncreaseXP(int32 Amount)
 	if (CurrentXP >= MaxXP)
 	{
 		//TODO: Show level up button
-		
+		OnLevelUp.Broadcast();
 	}
 }
 

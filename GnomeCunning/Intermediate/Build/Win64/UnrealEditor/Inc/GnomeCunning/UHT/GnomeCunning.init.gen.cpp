@@ -7,23 +7,27 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeGnomeCunning_init() {}
+	GNOMECUNNING_API UFunction* Z_Construct_UDelegateFunction_GnomeCunning_OnLevelUp__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_GnomeCunning;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_GnomeCunning()
 	{
 		if (!Z_Registration_Info_UPackage__Script_GnomeCunning.OuterSingleton)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_GnomeCunning_OnLevelUp__DelegateSignature,
+			};
 			static const UECodeGen_Private::FPackageParams PackageParams = {
 				"/Script/GnomeCunning",
-				nullptr,
-				0,
+				SingletonFuncArray,
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD1ECD41E,
-				0x7D814C31,
+				0x552FADFD,
+				0x000D55F0,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_GnomeCunning.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_GnomeCunning.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GnomeCunning(Z_Construct_UPackage__Script_GnomeCunning, TEXT("/Script/GnomeCunning"), Z_Registration_Info_UPackage__Script_GnomeCunning, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD1ECD41E, 0x7D814C31));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GnomeCunning(Z_Construct_UPackage__Script_GnomeCunning, TEXT("/Script/GnomeCunning"), Z_Registration_Info_UPackage__Script_GnomeCunning, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x552FADFD, 0x000D55F0));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

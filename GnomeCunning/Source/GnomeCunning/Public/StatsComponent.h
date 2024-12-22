@@ -4,6 +4,8 @@
 #include "Components/ActorComponent.h"
 #include "StatsComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnLevelUp);
+
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class UStatsComponent : public UActorComponent
 {
@@ -12,6 +14,9 @@ class UStatsComponent : public UActorComponent
 public:
 	// Sets default values for this component's properties
 	UStatsComponent();
+
+	UPROPERTY(BlueprintAssignable)
+	FOnLevelUp OnLevelUp;
 
 protected:
 	//Variables
