@@ -9,7 +9,7 @@
  * 
  */
 USTRUCT(BlueprintType)
-struct GNOMECUNNING_API FQuest
+struct GNOMECUNNING_API FQuest: public FTableRowBase
 {
  GENERATED_BODY()
 
@@ -17,7 +17,10 @@ struct GNOMECUNNING_API FQuest
  FString QuestName;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
- FString QuestDescription;
+ FName NextDialogueRow;
+
+ UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ bool bIsActive;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
  bool bIsCompleted;

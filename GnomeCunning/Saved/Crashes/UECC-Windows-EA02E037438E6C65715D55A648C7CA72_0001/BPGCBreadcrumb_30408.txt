@@ -1,0 +1,2 @@
+/Engine/Transient.World_0:PersistentLevel.BP_NPC_C_3.DialogueComponent
+/Game/Dialogue/DialogueComponent.DialogueComponent_C

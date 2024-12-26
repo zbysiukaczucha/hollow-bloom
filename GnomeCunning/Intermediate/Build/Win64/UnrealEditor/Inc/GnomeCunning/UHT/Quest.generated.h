@@ -16,7 +16,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FQuest_Statics; \
-	static class UScriptStruct* StaticStruct();
+	static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
 
 
 template<> GNOMECUNNING_API UScriptStruct* StaticStruct<struct FQuest>();

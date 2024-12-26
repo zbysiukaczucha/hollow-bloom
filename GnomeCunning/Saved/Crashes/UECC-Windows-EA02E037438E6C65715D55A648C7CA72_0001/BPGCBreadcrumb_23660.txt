@@ -1,0 +1,2 @@
+/Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.BP_NPC_C_UAID_7C10C945EE3C5A3B02_1351372639.DialogueComponent
+/Game/Dialogue/DialogueComponent.DialogueComponent_C

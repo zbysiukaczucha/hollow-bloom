@@ -1,0 +1,10 @@
+{
+	"ColumnWidths":
+	{
+		"bIsCompleted": 487,
+		"QuestName": 598,
+		"QuestDescription": 364,
+		"bIsActive": 292,
+		"NextDialogueRow": 407
+	}
+}
