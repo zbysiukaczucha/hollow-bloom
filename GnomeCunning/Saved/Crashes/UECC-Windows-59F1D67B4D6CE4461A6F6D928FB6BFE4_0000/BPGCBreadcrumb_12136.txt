@@ -1,2 +1,0 @@
-/Game/Dialogue/DialogueComponent.Default__DialogueComponent_C
-/Game/Dialogue/DialogueComponent.DialogueComponent_C

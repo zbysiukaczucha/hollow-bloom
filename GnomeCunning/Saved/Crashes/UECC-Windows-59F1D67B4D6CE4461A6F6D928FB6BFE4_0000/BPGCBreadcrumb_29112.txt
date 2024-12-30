@@ -1,2 +1,0 @@
-/Game/AI/NPCs/BP_NPC.BP_NPC_C:DialogueComponent_GEN_VARIABLE
-/Game/Dialogue/DialogueComponent.DialogueComponent_C
