@@ -17,11 +17,17 @@ struct GNOMECUNNING_API FQuest: public FTableRowBase
  FString QuestName;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
- FName NextDialogueRow;
+ FString QuestDescription;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
- bool bIsActive;
+ int32 XP;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
- bool bIsCompleted;
+ bool bIsCompleted = false;
+
+ UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ FName CompletedDialogueRow;
+
+ UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ UDataTable* DialogueTable;
 };

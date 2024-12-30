@@ -48,7 +48,10 @@ public:
 	bool bIsCasting; // Is the character currently casting a spell?
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
-	float SwordDamage; // Damage dealt by the sword
+	float SwordDamage; // Base damage dealt by the sword
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
+	float SpellDamage; // Base damage dealt by the spell
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	bool bIsDodging; // Is the character dodging?

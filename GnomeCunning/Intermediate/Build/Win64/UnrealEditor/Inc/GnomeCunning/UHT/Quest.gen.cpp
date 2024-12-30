@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeQuest() {}
 
 // Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 GNOMECUNNING_API UScriptStruct* Z_Construct_UScriptStruct_FQuest();
 UPackage* Z_Construct_UPackage__Script_GnomeCunning();
@@ -44,11 +45,11 @@ struct Z_Construct_UScriptStruct_FQuest_Statics
 		{ "Category", "Quest" },
 		{ "ModuleRelativePath", "Public/Quest.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NextDialogueRow_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_QuestDescription_MetaData[] = {
 		{ "Category", "Quest" },
 		{ "ModuleRelativePath", "Public/Quest.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsActive_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_XP_MetaData[] = {
 		{ "Category", "Quest" },
 		{ "ModuleRelativePath", "Public/Quest.h" },
 	};
@@ -56,13 +57,22 @@ struct Z_Construct_UScriptStruct_FQuest_Statics
 		{ "Category", "Quest" },
 		{ "ModuleRelativePath", "Public/Quest.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CompletedDialogueRow_MetaData[] = {
+		{ "Category", "Quest" },
+		{ "ModuleRelativePath", "Public/Quest.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DialogueTable_MetaData[] = {
+		{ "Category", "Quest" },
+		{ "ModuleRelativePath", "Public/Quest.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_QuestName;
-	static const UECodeGen_Private::FNamePropertyParams NewProp_NextDialogueRow;
-	static void NewProp_bIsActive_SetBit(void* Obj);
-	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsActive;
+	static const UECodeGen_Private::FStrPropertyParams NewProp_QuestDescription;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_XP;
 	static void NewProp_bIsCompleted_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsCompleted;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_CompletedDialogueRow;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DialogueTable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static void* NewStructOps()
 	{
@@ -71,22 +81,22 @@ struct Z_Construct_UScriptStruct_FQuest_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_QuestName = { "QuestName", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, QuestName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestName_MetaData), NewProp_QuestName_MetaData) };
-const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_NextDialogueRow = { "NextDialogueRow", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, NextDialogueRow), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NextDialogueRow_MetaData), NewProp_NextDialogueRow_MetaData) };
-void Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsActive_SetBit(void* Obj)
-{
-	((FQuest*)Obj)->bIsActive = 1;
-}
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsActive = { "bIsActive", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FQuest), &Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsActive_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsActive_MetaData), NewProp_bIsActive_MetaData) };
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_QuestDescription = { "QuestDescription", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, QuestDescription), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QuestDescription_MetaData), NewProp_QuestDescription_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_XP = { "XP", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, XP), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_XP_MetaData), NewProp_XP_MetaData) };
 void Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsCompleted_SetBit(void* Obj)
 {
 	((FQuest*)Obj)->bIsCompleted = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsCompleted = { "bIsCompleted", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FQuest), &Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsCompleted_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsCompleted_MetaData), NewProp_bIsCompleted_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_CompletedDialogueRow = { "CompletedDialogueRow", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, CompletedDialogueRow), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CompletedDialogueRow_MetaData), NewProp_CompletedDialogueRow_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FQuest_Statics::NewProp_DialogueTable = { "DialogueTable", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FQuest, DialogueTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DialogueTable_MetaData), NewProp_DialogueTable_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FQuest_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_QuestName,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_NextDialogueRow,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsActive,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_QuestDescription,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_XP,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_bIsCompleted,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_CompletedDialogueRow,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FQuest_Statics::NewProp_DialogueTable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FQuest_Statics::PropPointers) < 2048);
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FQuest_Statics::StructParams = {
@@ -116,10 +126,10 @@ UScriptStruct* Z_Construct_UScriptStruct_FQuest()
 struct Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FQuest::StaticStruct, Z_Construct_UScriptStruct_FQuest_Statics::NewStructOps, TEXT("Quest"), &Z_Registration_Info_UScriptStruct_Quest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuest), 2457149194U) },
+		{ FQuest::StaticStruct, Z_Construct_UScriptStruct_FQuest_Statics::NewStructOps, TEXT("Quest"), &Z_Registration_Info_UScriptStruct_Quest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FQuest), 3028480158U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_3650771955(TEXT("/Script/GnomeCunning"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_4152411081(TEXT("/Script/GnomeCunning"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GnomeCunning_Source_GnomeCunning_Public_Quest_h_Statics::ScriptStructInfo),
 	nullptr, 0);
