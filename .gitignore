@@ -72,16 +72,17 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-GnomeCunning/Saved/Telemetry/Telemetry.json
+HollowBloom/Saved/Telemetry/Telemetry.json
 
-GnomeCunning/Content/MegaMagicVFXBundle/**
-GnomeCunning/Content/YI_NPC/**
-GnomeCunning/Content/RPG_Orchestral_Essentials_Free_Sample/**
-GnomeCunning/Content/SmallSoundKit/**
-GnomeCunning/Content/WindmillEnvironment/**
-GnomeCunning/Content/Medieval_Env/**
-GnomeCunning/Content/Medieval_Village_Props/**
-GnomeCunning/Content/DarkMedieval/**
-GnomeCunning/Content/ParagonSevarog/**
-GnomeCunning/Content/__ExternalActors__/**
-GnomeCunning/Saved/Logs/**
+HollowBloom/Content/MegaMagicVFXBundle/**
+HollowBloom/Content/YI_NPC/**
+HollowBloom/Content/RPG_Orchestral_Essentials_Free_Sample/**
+HollowBloom/Content/SmallSoundKit/**
+HollowBloom/Content/WindmillEnvironment/**
+HollowBloom/Content/Medieval_Env/**
+HollowBloom/Content/Medieval_Village_Props/**
+HollowBloom/Content/DarkMedieval/**
+HollowBloom/Content/ParagonSevarog/**
+HollowBloom/Content/__ExternalActors__/**
+HollowBloom/Saved/**
+HollowBloom/Intermediate/**

@@ -1,0 +1,8 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"GnomeCunning": "UnrealEditor-GnomeCunning.dll",
+		"HollowBloom": "UnrealEditor-HollowBloom.dll"
+	}
+}
