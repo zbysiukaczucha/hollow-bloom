@@ -7,8 +7,7 @@ UStatsComponent::UStatsComponent(): CurrentHealth(100), MaxHealth(100), CurrentS
                               Level(0),
                               Vigor(0),
                               Endurance(0), Fitness(0),
-                              Mind(0),
-                              PlayerCharacter(nullptr)
+                              Mind(0)
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.
 	// You can turn these features off to improve performance if you don't need them.
@@ -19,9 +18,6 @@ UStatsComponent::UStatsComponent(): CurrentHealth(100), MaxHealth(100), CurrentS
 void UStatsComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// Custom initialization
-	PlayerCharacter = Cast<ACharacter>(GetOwner());
 }
 
 // Called every frame
@@ -35,8 +31,8 @@ void UStatsComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 bool UStatsComponent::DecreaseHealth(float Amount)
 {
 	CurrentHealth = CurrentHealth - Amount;
-	bool bIsPlayerDead = CurrentHealth <= 0;
-	return bIsPlayerDead;
+	bool bIsDead = CurrentHealth <= 0;
+	return bIsDead;
 }
 
 void UStatsComponent::IncreaseHealth(float Amount)
@@ -64,7 +60,6 @@ void UStatsComponent::IncreaseXP(int32 Amount)
 	CurrentXP = CurrentXP + Amount;
 	if (CurrentXP >= MaxXP)
 	{
-		//TODO: Show level up button
 		OnLevelUp.Broadcast();
 	}
 }

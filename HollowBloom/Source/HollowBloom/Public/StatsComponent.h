@@ -42,8 +42,6 @@ protected:
 	int32 Fitness; // Stat for physical damage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
 	int32 Mind; // Stat for magical damage
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	ACharacter* PlayerCharacter; // Reference to the BP Third Person Character
 
 protected:
 	// Called when the game starts
@@ -55,7 +53,7 @@ public:
 
 	// Custom functionality for the component can be added here
 	UFUNCTION(BlueprintCallable)
-	UPARAM(DisplayName = "IsPlayerDead")bool DecreaseHealth(float Amount);
+	UPARAM(DisplayName = "IsDead")bool DecreaseHealth(float Amount);
 	UFUNCTION(BlueprintCallable)
 	void IncreaseHealth(float Amount);
 	UFUNCTION(BlueprintCallable)
