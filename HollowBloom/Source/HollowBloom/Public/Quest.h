@@ -14,6 +14,9 @@ struct HOLLOWBLOOM_API FQuest: public FTableRowBase
  GENERATED_BODY()
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
+ FName QuestID;
+
+ UPROPERTY(EditAnywhere, BlueprintReadWrite)
  FString QuestName;
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite)
