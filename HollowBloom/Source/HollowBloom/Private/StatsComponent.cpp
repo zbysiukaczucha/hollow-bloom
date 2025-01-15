@@ -3,7 +3,7 @@
 #include "GameFramework/Character.h"
 
 // Sets default values for this component's properties
-UStatsComponent::UStatsComponent(): CurrentHealth(100), MaxHealth(100), CurrentStamina(100), MaxStamina(100), CurrentXP(0), MaxXP(1000),
+UStatsComponent::UStatsComponent(): CurrentHealth(100), MaxHealth(100), CurrentStamina(100), MaxStamina(100), CurrentXP(750), MaxXP(750),
                               Level(0),
                               Vigor(0),
                               Endurance(0), Fitness(0),
