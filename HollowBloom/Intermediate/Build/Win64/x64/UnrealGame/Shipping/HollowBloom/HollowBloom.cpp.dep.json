@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\hollowbloom.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\hollowbloom\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\hollowbloom\\definitions.hollowbloom.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\hollowbloom.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

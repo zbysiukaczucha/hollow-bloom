@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HollowBloom.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HollowBloom.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HollowBloomEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\HollowBloom.uproject.bak" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HollowBloom">
+      <UniqueIdentifier>{DDBFC77C-F1C2-3C2C-A22B-DECB01FD93DF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HollowBloom\GnomeCunning.cpp">
+      <Filter>Source\HollowBloom</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HollowBloom\GnomeCunning.h">
+      <Filter>Source\HollowBloom</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HollowBloom\GnomeCunningCharacter.cpp">
+      <Filter>Source\HollowBloom</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HollowBloom\GnomeCunningCharacter.h">
+      <Filter>Source\HollowBloom</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HollowBloom\GnomeCunningGameMode.cpp">
+      <Filter>Source\HollowBloom</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HollowBloom\GnomeCunningGameMode.h">
+      <Filter>Source\HollowBloom</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\HollowBloom\HollowBloom.Build.cs">
+      <Filter>Source\HollowBloom</Filter>
+    </None>
+    <Filter Include="Source\HollowBloom\Private">
+      <UniqueIdentifier>{A4B2ACF0-F23A-3693-AEB5-441B6D2370DF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HollowBloom\Private\CombatComponent.cpp">
+      <Filter>Source\HollowBloom\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HollowBloom\Private\StatsComponent.cpp">
+      <Filter>Source\HollowBloom\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\HollowBloom\Public">
+      <UniqueIdentifier>{2F74AB54-8040-30F9-89F9-5768676CEE34}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\HollowBloom\Public\CombatComponent.h">
+      <Filter>Source\HollowBloom\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HollowBloom\Public\Interactable.h">
+      <Filter>Source\HollowBloom\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HollowBloom\Public\Quest.h">
+      <Filter>Source\HollowBloom\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HollowBloom\Public\StatsComponent.h">
+      <Filter>Source\HollowBloom\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
