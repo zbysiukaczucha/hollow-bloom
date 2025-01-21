@@ -75,5 +75,6 @@ DerivedDataCache/*
 
 HollowBloom/Content/DarkMedieval/**
 HollowBloom/Content/ParagonSevarog/**
-HollowBloom/Content/Medieval_Env/**
-
+HollowBloom/Content/Medieval_Env/Buildings/**
+HollowBloom/Content/Medieval_Env/Nature/**
+HollowBloom/Content/Medieval_Env/Maps/**
