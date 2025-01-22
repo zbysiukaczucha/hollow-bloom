@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\unrealgame\\inc\\hollowbloom\\uht\\hollowbloomcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\hollowbloom\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\hollowbloom\\definitions.hollowbloom.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\hollowbloomcharacter.h",
+            "d:\\program files\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\program files\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\program files\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "d:\\program files\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "d:\\program files\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "d:\\program files\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\program files\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "d:\\program files\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\unrealgame\\inc\\hollowbloom\\uht\\hollowbloomcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

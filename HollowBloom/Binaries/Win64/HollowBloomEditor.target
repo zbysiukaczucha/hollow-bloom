@@ -2342,6 +2342,14 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/StaticMeshEditorModeling/Binaries/Win64/UnrealEditor-StaticMeshEditorModeling.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/StaticMeshEditorModeling/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/UVEditor/Binaries/Win64/UnrealEditor-UVEditor.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -26312,6 +26320,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/StaticMeshEditorModeling/StaticMeshEditorModeling.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/UVEditor/UVEditor.uplugin",
 			"Type": "UFS"
 		},
@@ -26881,6 +26893,7 @@
 		"SkeletalReduction",
 		"SoundFields",
 		"SpeedTreeImporter",
+		"StaticMeshEditorModeling",
 		"StructUtils",
 		"StudioTelemetry",
 		"SubversionSourceControl",

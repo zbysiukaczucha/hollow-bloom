@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HollowBloom",
+			"Path": "..\\Source\\HollowBloom.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HollowBloomEditor",
+			"Path": "..\\Source\\HollowBloomEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

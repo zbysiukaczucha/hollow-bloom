@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\private\\hollowbloomgameinstance.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\hollowbloomeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\hollowbloom\\definitions.hollowbloom.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\public\\hollowbloomgameinstance.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\source\\hollowbloom\\public\\quest.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\unrealeditor\\inc\\hollowbloom\\uht\\quest.generated.h",
+            "c:\\users\\zbysiu\\source\\repos\\gnome-cunning\\hollowbloom\\intermediate\\build\\win64\\unrealeditor\\inc\\hollowbloom\\uht\\hollowbloomgameinstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
