@@ -73,6 +73,5 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-HollowBloom/Content/DarkMedieval/Characters/**
 HollowBloom/Content/ParagonSevarog/**
 HollowBloom/Content/Medieval_Env/Maps/**
